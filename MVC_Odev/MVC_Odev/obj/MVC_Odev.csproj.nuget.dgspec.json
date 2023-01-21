@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Viraldo\\Desktop\\Haftasonu Northwind\\MVC_Odev\\MVC_Odev\\MVC_Odev.csproj": {}
+    "C:\\Users\\Viraldo\\Desktop\\Northwind Finished\\MVC_Odev\\MVC_Odev\\MVC_Odev.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Viraldo\\Desktop\\Haftasonu Northwind\\MVC_Odev\\MVC_Odev\\MVC_Odev.csproj": {
+    "C:\\Users\\Viraldo\\Desktop\\Northwind Finished\\MVC_Odev\\MVC_Odev\\MVC_Odev.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Viraldo\\Desktop\\Haftasonu Northwind\\MVC_Odev\\MVC_Odev\\MVC_Odev.csproj",
+        "projectUniqueName": "C:\\Users\\Viraldo\\Desktop\\Northwind Finished\\MVC_Odev\\MVC_Odev\\MVC_Odev.csproj",
         "projectName": "MVC_Odev",
-        "projectPath": "C:\\Users\\Viraldo\\Desktop\\Haftasonu Northwind\\MVC_Odev\\MVC_Odev\\MVC_Odev.csproj",
+        "projectPath": "C:\\Users\\Viraldo\\Desktop\\Northwind Finished\\MVC_Odev\\MVC_Odev\\MVC_Odev.csproj",
         "packagesPath": "C:\\Users\\Viraldo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Viraldo\\Desktop\\Haftasonu Northwind\\MVC_Odev\\MVC_Odev\\obj\\",
+        "outputPath": "C:\\Users\\Viraldo\\Desktop\\Northwind Finished\\MVC_Odev\\MVC_Odev\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

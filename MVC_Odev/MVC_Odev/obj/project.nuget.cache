@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SI92exOTMNgaw5xXnOKl7PxF0uQ+7LGlZxgj3KuQN0bOvEc79mOdWVSZ4yZA3ee5TrEFa0viIQWfiLIlQqy7ZQ==",
+  "dgSpecHash": "sJNEKRndjsO0Vs5pL8xQr0sJxmFeG2B/1gSqlBT31RKndukkRXZGf5EGDRsvIQVugpU0d22Q8mfDd1ySfeelug==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Viraldo\\Desktop\\Haftasonu Northwind\\MVC_Odev\\MVC_Odev\\MVC_Odev.csproj",
+  "projectFilePath": "C:\\Users\\Viraldo\\Desktop\\Northwind Finished\\MVC_Odev\\MVC_Odev\\MVC_Odev.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Viraldo\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\Viraldo\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",

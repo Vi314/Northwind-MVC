@@ -1,0 +1,42 @@
+﻿@model MVC_Odev.Models.Product
+@{
+    ViewData["Title"] = "UpdateProduct";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<head>
+    <style>
+        .inputStyle {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+
+
+<div class="container">
+    <div class="row">
+        <div class="container bodyContainerMain">
+            <h1>UpdateProduct</h1>
+            <form method="post">
+                <div class="col-md- 6 inputStyle">
+                    <label>ProductName</label>
+                    <input class="form-control" name="ProductName" value="@Model.ProductName" />
+                </div>
+                <div class="col-md-6 inputStyle">
+                    <label>UnitPrice</label>
+                    <input class="form-control" name="UnitPrice" value="@Model.UnitPrice" />
+                </div>
+                <div class="inputStyle">
+                    <label>UnitsInStock</label>
+                    <input class="form-control" name="UnitsInStock" value="@Model.UnitsInStock" />
+                </div>
+                <button type="submit" class="btn btn-outline-warning">Güncelle</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+

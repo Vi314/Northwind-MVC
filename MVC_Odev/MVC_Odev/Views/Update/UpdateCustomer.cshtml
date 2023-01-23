@@ -1,0 +1,41 @@
+﻿@model MVC_Odev.Models.Customer
+@{
+    ViewData["Title"] = "UpdateCustomer";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<head>
+    <style>
+        .inputStyle {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+
+
+<div class="container">
+    <div class="row">
+        <div class="container bodyContainerMain">
+            <h1>UpdateCustomer</h1>
+            <form method="post">
+                <div class="col-md- 6 inputStyle">
+                    <label>CustomerName</label>
+                    <input class="form-control" name="CustomerName" value="@Model.CustomerName" />
+                </div>
+                <div class="col-md-6 inputStyle">
+                    <label>CustomerTitle</label>
+                    <input class="form-control" name="CustomerTitle" value="@Model.CustomerTitle" />
+                </div>
+                <div class="inputStyle">
+                    <label>CustomerPhone</label>
+                    <input class="form-control" name="CustomerPhone" value="@Model.CustomerPhone" />
+                </div>
+                <button type="submit" class="btn btn-outline-warning">Güncelle</button>
+            </form>
+        </div>
+    </div>
+</div>
+

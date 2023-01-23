@@ -1,0 +1,48 @@
+﻿@model MVC_Odev.Models.Order
+@{
+    ViewData["Title"] = "UpdateOrder";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<head>
+    <style>
+        .inputStyle{
+            margin-top:10px;
+            margin-bottom: 10px;
+            justify-content:space-between;
+        }
+    </style>
+</head>
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="container bodyContainerMain">
+            <h1>UpdateOrder</h1>
+            <form method="post">
+                <div class="col-md- 6 inputStyle">
+                    <label class="input-label">OrderDate</label>
+                    <input class="form-control" name="OrderDate" value="@Model.OrderDate" />
+                </div>
+                <div class="col-md-6 inputStyle">
+                    <label>CustomerID</label>
+                    <input class="form-control" name="CustomerID" value="@Model.CustomerID" />
+                </div>
+                <div class="inputStyle">
+                    <label>Freight</label>
+                    <input class="form-control" name="Freight" value="@Model.Freight" />
+                </div>
+                <div class="inputStyle">
+                    <label>ShipAdress</label>
+                    <input class="form-control" name="ShipAdress" value="@Model.ShipAdress" />
+                </div>
+                <div class="inputStyle">
+                    <label>ShipVia</label>
+                    <input class="form-control" name="ShipVia" value="@Model.ShipVia" />
+                </div>
+                <button type="submit" class="btn btn-outline-warning">Güncelle</button>
+            </form>
+        </div>
+    </div>
+</div>
+

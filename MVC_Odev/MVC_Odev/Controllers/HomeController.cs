@@ -1,113 +1,140 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using MVC_Odev.Models;
 using System;
-using System.Collections.Generic;
-
+    
 namespace MVC_Odev.Controllers
 {
     public class HomeController : Controller
     {
+
         public IActionResult Index()
         {
-            
             return View();
         }
+
         [HttpPost]
         public IActionResult Index(int id)
         {
-            foreach (var item in Program.sepet)
+            foreach (var product in Data.Database.sepet)
             {
-                if (id == item.Id)
+                if (id == product.Id)
                 {
-                    item.Amount += 1;
+                    product.Amount += 1;
                     break;
                 }
             }
             return View();
         }
 
-        public IActionResult Products()
+        public IActionResult Products(int id)
         {
-            ViewBag.Products = Program.products;
+            foreach (Product product in Data.Database.products)
+            {
+                if (product.Id == id)
+                {
+                    Data.Database.products.Remove(product);
+                    break;
+                }
+            }
+            ViewBag.Products = Data.Database.products;
             return View();
         }
 
         public IActionResult ProductCreate()
         {
-            ViewBag.Products = Program.products;
-            return View();
-        }
-        [HttpPost]
-        public IActionResult ProductCreate(Product product)
-        {
-            product.Id = Program.products.Count + 1;
-            Program.products.Add(product);  
             return View();
         }
 
-        public IActionResult Customers()
+        [HttpPost]  
+        public IActionResult ProductCreate(Product product)
         {
-            ViewBag.Customer = Program.customers;
+            product.Id = Data.Database.products.Count + 1;
+            Data.Database.products.Add(product);  
+            return View();
+        }
+
+        public IActionResult Customers(string id)
+        {
+            foreach (Customer customer in Data.Database.customers)
+            {
+                if (customer.Id == id)
+                {
+                    Data.Database.customers.Remove(customer);
+                    break;
+                }
+            }
+            ViewBag.Customer = Data.Database.customers;
             return View();
         }
         public IActionResult CustomerCreate()
         {
-            ViewBag.Customer = Program.customers;
             return View();
         }
+
         [HttpPost]
         public IActionResult CustomerCreate(Customer customer)
         {
-            Program.customers.Add(customer);
+            Data.Database.customers.Add(customer);
             return View();
         }
-        public IActionResult Orders()
+
+        public IActionResult Orders(int id)
         {
-            ViewBag.Orders = Program.orders;
+            foreach (Order order in Data.Database.orders)
+            {
+                if (order.Id == id)
+                {
+                    Data.Database.orders.Remove(order);
+                    break;
+                }
+            }
+            ViewBag.Orders = Data.Database.orders;
             return View();
         }
-        public IActionResult Employee()
+
+        public IActionResult Employee(int id)
         {
-            ViewBag.Employee = Program.employees;
+            foreach (Employee employee in Data.Database.employees)
+            {
+                if (employee.Id == id)
+                {
+                    Data.Database.employees.Remove(employee);
+                    break;
+                }
+            }
+            ViewBag.Employee = Data.Database.employees;
             return View();
         }
+
         public IActionResult EmployeeCreate()
         {
-            ViewBag.Employee = Program.employees;
             return View();
         }
+
         [HttpPost]
         public IActionResult EmployeeCreate(Employee employee)
         {
-            employee.Id = Program.employees.Count + 1;
-            Program.employees.Add(employee);
+            employee.Id = Data.Database.employees.Count + 1;
+            Data.Database.employees.Add(employee);
             return View();
         }
+
         public IActionResult Sepet()
         {
-            ViewBag.Sepet = Program.sepet;
+            ViewBag.Sepet = Data.Database.sepet;
             return View();
         }
+
         [HttpPost]
         public IActionResult Sepet(Order order)
         {
-            order.Id = Program.orders.Count + 1;
+            order.Id = Data.Database.orders.Count + 1;
             order.OrderDate = DateTime.Now;
-            Program.orders.Add(order);
-            foreach (var item in Program.sepet)
+            Data.Database.orders.Add(order);
+            foreach (var item in Data.Database.sepet)
             {
                 item.Amount = 0;
             }
-            return View();
-        }
-
-        public IActionResult Login()
-        {
-            return View();
-        }
-
-        public IActionResult Register()
-        {
             return View();
         }
 

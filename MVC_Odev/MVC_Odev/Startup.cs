@@ -1,12 +1,7 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace MVC_Odev
 {
@@ -27,11 +22,20 @@ namespace MVC_Odev
 
             app.UseRouting();
             app.UseStaticFiles();
-            Program.SepetOlustur();
+            Repository.Repository.SepetOlustur();
 
             app.UseEndpoints(x =>
             {
-                x.MapDefaultControllerRoute();
+                x.MapControllerRoute(
+                    name: "UpdateRoute",
+                    pattern: "{controller}/{action}/{id}",
+                    defaults: new {controller="Update"}
+                    );
+
+
+                x.MapControllerRoute(
+                    name: "default",
+                    pattern: "{controller=Home}/{action=Index}/{id?}");
             });
         }
     }

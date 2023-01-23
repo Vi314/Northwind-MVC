@@ -1,0 +1,43 @@
+﻿@model MVC_Odev.Models.Employee
+@{
+    ViewData["Title"] = "UpdateEmployee";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<head>
+    <style>
+        .inputStyle {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+
+
+<div class="container">
+    <div class="row">
+        <div class="container bodyContainerMain">
+            <h1>UpdateEmployee</h1>
+            <form method="post">
+                <div class="col-md- 6 inputStyle">
+                    <label>EmployeeFirstName</label>
+                    <input class="form-control" name="EmployeeFirstName" value="@Model.EmployeeFirstName" />
+                </div>
+                <div class="col-md-6 inputStyle">
+                    <label>EmployeeLastName</label>
+                    <input class="form-control" name="EmployeeLastName" value="@Model.EmployeeLastName" />
+                </div>
+                <div class="inputStyle">
+                    <label>EmployeeTitle</label>
+                    <input class="form-control" name="EmployeeTitle" value="@Model.EmployeeTitle" />
+                </div>
+                <div class="inputStyle">
+                    <label>EmployeePhone</label>
+                    <input class="form-control" name="EmployeePhone" value="@Model.EmployeePhone" />
+                </div>
+                <button type="submit" class="btn btn-outline-warning">Güncelle</button>
+            </form>
+        </div>
+    </div>
+</div>

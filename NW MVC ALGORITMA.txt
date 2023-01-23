@@ -1,5 +1,6 @@
 Northwind
 
+-HomeController
 Sayfalar(actions)
 	-Index:
 		-Sabit 4 ürün gösterilicek
@@ -9,7 +10,7 @@ Sayfalar(actions)
 		-Yeni product oluşturmak için bulunan butona tıklanıldığında Product Oluşturma
 		sayfasına yönlendirilicek ve oluşturulan product Productların listelendiği 
 		sayfada görüntülenebilinecek.
-		-Sepete ekle seçeneği bulunucak ve bu seçeneğe tıklanıldığında sepet sayfasında
+		**-Sepete ekle seçeneği bulunucak ve bu seçeneğe tıklanıldığında sepet sayfasında
 		bilgileriyle görülebilinecek ve sepetin toplam fiyatı güncellenilecek.
 		-Veri satırı silinme seçeneği olucak
 
@@ -32,8 +33,6 @@ Sayfalar(actions)
 	-Sepet
 		-Eklenen ürünler listelenilecek 
 		-Toplam fiyat görülcek
-		-Ürünü sepetten kaldırma veya miktar arttırma(Çok zorsa yapmayız) 
-		seçeneği bulunacak
 		-Sipariş oluştur butonu olucak bu butona tıklanıldığında önce sipariş formu
 		doldurulacak ve bu form siparişler sayfasında görüntülenebilinecek.
 
